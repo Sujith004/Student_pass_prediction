@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import joblib
+from sklearn.externals import joblib
 
 model=joblib.load("student_pass_model.pkl")
 st.title("Student pass prediction")
